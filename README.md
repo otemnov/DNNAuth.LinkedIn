@@ -1,1 +1,1 @@
-# LinkedInDNNAuth
+The DNN LinkedIn Authentication Project is an Authentication provider for DotNetNuke that uses LinkedIn authentication to authenticate users.

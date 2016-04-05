@@ -1,0 +1,65 @@
+<dotnetnuke type="Package" version="5.0">
+  <packages>
+    <package name="DNNAuth.LinkedIn" type="Auth_System" version="07.04.02" >
+      <friendlyName>DNN LinkedIn Authentication Project</friendlyName>
+      <description>
+				The DNN LinkedIn Authentication Project is an Authentication provider for DotNetNuke that uses
+				LinkedIn authentication to authenticate users.
+			</description>
+      <owner>
+        <name>Oleg Temnov</name>
+        <url>https://github.com/otemnov</url>
+        <email>olegtemnov@yahoo.com</email>
+      </owner>
+      <license src="license.txt" />
+      <releaseNotes src="releasenotes.txt" />
+      <azureCompatible>true</azureCompatible>
+      <dependencies>
+        <dependency type="CoreVersion">05.00.00</dependency>
+      </dependencies>
+      <components>
+        <component type="AuthenticationSystem">
+          <authenticationService>
+            <type>LinkedIn</type>
+            <settingsControlSrc>DesktopModules/AuthenticationServices/DNNAuth.LinkedIn/Settings.ascx</settingsControlSrc>
+            <loginControlSrc>DesktopModules/AuthenticationServices/DNNAuth.LinkedIn/Login.ascx</loginControlSrc>
+            <logoffControlSrc/>
+          </authenticationService>
+        </component>
+        <component type="Assembly">
+          <assemblies>
+            <assembly>
+              <path>bin</path>
+              <name>DNNAuth.LinkedIn.dll</name>
+            </assembly>
+          </assemblies>
+        </component>
+        <component type="File">
+          <files>
+            <basePath>DesktopModules/AuthenticationServices/DNNAuth.LinkedIn</basePath>
+            <file>
+              <path>App_LocalResources</path>
+              <name>Login.ascx.resx</name>
+            </file>
+            <file>
+              <path>App_LocalResources</path>
+              <name>Settings.ascx.resx</name>
+            </file>
+            <file>
+              <name>Login.ascx</name>
+            </file>
+            <file>
+              <name>Settings.ascx</name>
+            </file>
+            <file>
+              <name>license.txt</name>
+            </file>
+            <file>
+              <name>releasenotes.txt</name>
+            </file>
+          </files>
+        </component>
+      </components>
+    </package>
+  </packages>
+</dotnetnuke>
